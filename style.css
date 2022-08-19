@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(249.39deg, #0D0C4D -1.22%, #161620 103.79%);
+}
+
+/* Utility classes */
+
+:root{
+    /* font-family: 'Whyte Inktrap'; */
+    --inter: 'Inter', sans-serif;
+    --ibm-plex-sans: 'IBM Plex Sans', sans-serif;
+    --ibm-plex-serif: 'IBM Plex Serif', serif;
+    --nav-bar-bg: rgba(31, 29, 43, 0.37);
+    --btn-bg: #D331BB;
+    --numbers-bg: #262222;
+    --logo-bg: linear-gradient(0deg, rgba(91, 91, 91, 0.54), rgba(91, 91, 91, 0.54)), #000000;
+}
