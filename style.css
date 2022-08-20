@@ -4,19 +4,144 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
   background: linear-gradient(249.39deg, #0D0C4D -1.22%, #161620 103.79%);
 }
 
 /* Utility classes */
 
 :root{
-    /* font-family: 'Whyte Inktrap'; */
-    --inter: 'Inter', sans-serif;
-    --ibm-plex-sans: 'IBM Plex Sans', sans-serif;
-    --ibm-plex-serif: 'IBM Plex Serif', serif;
-    --whyte-inktrap: 'Whyte Inktrap';
-    --nav-bar-bg: rgba(31, 29, 43, 0.37);
-    --btn-bg: #D331BB;
-    --numbers-bg: #262222;
-    --logo-bg: linear-gradient(0deg, rgba(91, 91, 91, 0.54), rgba(91, 91, 91, 0.54)), #000000;
+  --inter: 'Inter', sans-serif;
+  --ibm-plex-sans: 'IBM Plex Sans', sans-serif;
+  --ibm-plex-serif: 'IBM Plex Serif', serif;
+  --whyte-inktrap: 'Whyte Inktrap';
+  --nav-bar-bg: rgba(31, 29, 43, 0.37);
+  --btn-bg: #D331BB;
+  --numbers-bg: #262222;
+  --logo-bg: linear-gradient(0deg, rgba(91, 91, 91, 0.54), rgba(91, 91, 91, 0.54)), #000000;
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn p{
+  background: var(--btn-bg);
+  padding: 10px 25px;
+  border-radius: 2px;
+  color: var(--white);
+  font-weight: 600;
+  letter-spacing: .5px;
+  cursor: pointer;
+}
+
+
+/* Main components code */
+
+
+/* Navbar */
+
+#navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: var(--inter);
+  background: var(--nav-bar-bg);
+  backdrop-filter: blur(48px);
+}
+
+.logo{
+  color: var(--white);
+  font-size: 28px;
+  font-family: var(--ibm-plex-sans) !important;
+  font-weight: 600;
+}
+
+#sideLink{
+  display: flex;
+}
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.nav-links ul li:nth-child(4){
+  margin-right: 5rem;
+}
+
+.nav-links ul li a{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-links ul li::after{
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: var(--btn-bg);
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+
+#navbar .fa{
+  display: none;
+}
+
+
+/* Navbar@media query:375px */
+
+@media screen and (max-width: 768px){
+  .logo{
+    font-size: 18px;
+  }
+
+  .nav-links ul li:nth-child(4){
+    margin-right: none;
+  }
+
+  #sideLink{
+    flex-direction: column;
+  }
+  
+  .btn{
+    align-self: center;
+  }
+
+  .nav-links ul li{
+    display: block;
+  }
+
+  #sideLink{
+    position: absolute;
+    background: var(--numbers-bg);
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  #navbar .fa{
+    display: block;
+    color: var(--white);
+    margin: 10px;
+    font-size: 25px;
+    cursor: pointer;
+  }
 }
