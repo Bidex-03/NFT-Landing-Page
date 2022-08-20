@@ -111,18 +111,21 @@ a{
 
   .nav-links ul li:nth-child(4){
     margin-right: none;
+    border-bottom: none;
   }
 
   #sideLink{
     flex-direction: column;
   }
   
-  .btn{
+  .navBtn{
     align-self: center;
+    margin-top: 20px;
   }
 
   .nav-links ul li{
     display: block;
+    border-bottom: 1px solid var(--btn-bg);
   }
 
   #sideLink{
@@ -135,6 +138,10 @@ a{
     text-align: left;
     z-index: 2;
     transition: 1s;
+  }
+
+  .nav-links ul li::after{
+    display: none;
   }
 
   #navbar .fa{
