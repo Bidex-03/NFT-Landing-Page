@@ -30,9 +30,9 @@ a{
   color: #fff;
 }
 
-.btn p{
+.btn a{
   background: var(--btn-bg);
-  padding: 10px 25px;
+  padding: 15px 25px;
   border-radius: 2px;
   color: var(--white);
   font-weight: 600;
@@ -51,6 +51,7 @@ a{
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  padding: 20px 150px;
   font-family: var(--inter);
   background: var(--nav-bar-bg);
   backdrop-filter: blur(48px);
@@ -61,6 +62,10 @@ a{
   font-size: 28px;
   font-family: var(--ibm-plex-sans) !important;
   font-weight: 600;
+}
+
+.navBtn p{
+  margin-top: 15px;
 }
 
 #sideLink{
@@ -105,8 +110,13 @@ a{
 /* Navbar@media query:375px */
 
 @media screen and (max-width: 768px){
+  #navbar{
+    padding: 18px 30px;
+  }
+
   .logo{
     font-size: 18px;
+    padding-left: 30px;
   }
 
   .nav-links ul li:nth-child(4){
@@ -151,4 +161,57 @@ a{
     font-size: 25px;
     cursor: pointer;
   }
+}
+
+
+/* lanPage code */
+
+#lanPage{
+  padding: 100px 150px;
+  color: var(--white);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+}
+
+.lanTxt{
+  width: 579px;
+  height: 260px;
+}
+
+.lanTxt h1{
+  font-size: 72px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  font-family: var(--whyte-inktrap);
+  line-height: 86px;
+}
+
+.lanTxt p{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: var(--ibm-plex-sans);
+}
+
+.bidBtn{
+  margin-top: 4rem;
+}
+
+
+.lanImg .img1{
+  width: 400px;
+  height: 500px;
+  padding-top: 20px;
+  position: absolute;
+  z-index: 2;
+}
+
+.lanImg .img2{
+  width: 300px;
+  /* height: 400px; */
+  padding-top: 50px;
+  position: absolute;
+  z-index: 1;
+  right: 50px;
 }
