@@ -198,20 +198,106 @@ a{
   margin-top: 4rem;
 }
 
+.lanImg{
+  position: relative;
+}
+
+.lanImg img{
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+  position: absolute;
+}
 
 .lanImg .img1{
-  width: 400px;
-  height: 500px;
-  padding-top: 20px;
-  position: absolute;
-  z-index: 2;
+  z-index: 3;
+  width: 380px;
+  height: 550px;
+  object-fit: cover;
+  top: 0;
+  left: 0;
 }
 
 .lanImg .img2{
-  width: 300px;
-  /* height: 400px; */
-  padding-top: 50px;
-  position: absolute;
+  z-index: 2;
+  width: 400px;
+  height: 515px;
+  top: 20px;
+  left: 5px;
+  object-fit: cover;
+}
+
+.lanImg .img3{
   z-index: 1;
-  right: 50px;
+  width: 440px;
+  height: 480px;
+  top: 40px;
+  left: 2px;
+  object-fit: cover;
+}
+
+/* lanPage@media query:768px */
+
+@media screen and (max-width: 768px){
+  #lanPage{
+    grid-template-columns: 1fr;
+    padding: 91px 30px;
+  }
+
+  .lanTxt{
+    width: 100%;
+    height: auto;
+  }
+
+  .lanTxt h1{
+    font-size: 36px;
+    line-height: 43px;
+  }
+
+  .lanTxt p{
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .bidBtn{
+    width: auto;
+  }
+
+  .lanImg{
+    width: 100%;
+    height: auto;
+  }
+
+  .lanImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .lanImg .img1{
+    width: 230px;
+    height: 320px;
+    object-fit: cover;
+    z-index: 3;
+    top: 0;
+    left: 0;
+  }
+
+  .lanImg .img2{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    z-index: 2;
+    top: 10px;
+    left: 60px;
+  }
+
+  .lanImg .img3{
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+    z-index: 1;
+    top: 20px;
+    left: 80px;
+  }
 }
