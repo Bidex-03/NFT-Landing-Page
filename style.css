@@ -64,7 +64,7 @@ a{
   font-weight: 600;
 }
 
-.navBtn p{
+.navBtn{
   margin-top: 15px;
 }
 
@@ -260,7 +260,8 @@ a{
   }
 
   .bidBtn{
-    width: auto;
+    width: 100%;
+    text-align: center;
   }
 
   .lanImg{
@@ -289,7 +290,7 @@ a{
     object-fit: cover;
     z-index: 2;
     top: 10px;
-    left: 60px;
+    left: 70px;
   }
 
   .lanImg .img3{
@@ -298,6 +299,6 @@ a{
     object-fit: cover;
     z-index: 1;
     top: 20px;
-    left: 80px;
+    left: 100px;
   }
 }
