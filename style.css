@@ -71,6 +71,7 @@ a{
 
 #sideLink{
   display: flex;
+  position: relative;
 }
 
 .nav-links ul li{
@@ -110,7 +111,7 @@ a{
 
 /* Navbar@media query:768px */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 600px){
   #navbar{
     padding: 18px 30px;
   }
@@ -139,7 +140,7 @@ a{
   }
 
   #sideLink{
-    position: fixed;
+    position: fixed !important;
     background: var(--numbers-bg);
     height: 100vh;
     width: 200px;
@@ -200,6 +201,7 @@ a{
 
 .lanImg{
   position: relative;
+  z-index: -1;
 }
 
 .lanImg img{
