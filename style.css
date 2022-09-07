@@ -39,7 +39,16 @@ a{
   font-family: var(--ibm-plex-serif);
   letter-spacing: .5px;
   cursor: pointer;
+  /* display: grid;
+  place-items: center;
+  width: 12rem; */
 }
+
+/* @media screen and (max-width: 768px){
+  .btn a{
+    width: 100%;
+  }
+} */
 
 
 /* Main components code */
@@ -114,6 +123,8 @@ a{
 @media screen and (max-width: 600px){
   #navbar{
     padding: 18px 30px;
+    position: fixed;
+    width: 100%;
   }
 
   .logo{
@@ -140,7 +151,6 @@ a{
   }
 
   #sideLink{
-    display: none;
     position: fixed;
     background: var(--numbers-bg);
     height: 100vh;
@@ -173,7 +183,7 @@ a{
   color: var(--white);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 12rem;
+  grid-column-gap: 5rem;
 }
 
 .lanTxt{
@@ -269,6 +279,7 @@ a{
   .lanImg{
     width: 100%;
     height: auto;
+    margin-top: 5rem;
   }
 
   .lanImg img{
@@ -310,6 +321,64 @@ a{
 
 #automated{
   color: var(--white);
-  margin-top: 5rem;
+  margin-top: 15rem;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  background: #262222;
+  opacity: 0.45;
+  backdrop-filter: blur(86px);
+  padding: 2rem 1rem;
+}
+
+#automated div{
+  border-right: 1px solid var(--white);
+  padding: 0 2rem;
+}
+
+#automated h3{
+  font-size: 32px;
+  font-weight: 600;
+  font-family: var(--whyte-inktrap);
+  line-height: 38px;
+  color: var(--white);
+}
+
+#automated p{
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--ibm-plex-serif);
+  line-height: 25px;
+  color: var(--white);
+}
+
+#automated div:last-child{
+  border-right: none;
+}
+
+
+/* automated@media query:768px */
+
+@media screen and (max-width: 768px){
+  #automated{
+    grid-template-columns: 1fr;
+    padding: 2rem 0;
+    margin-top: 25rem;
+    width: 10rem;
+    margin-left: 5rem;
+  }
+
+  #automated div{
+    border-right: none;
+  }
+
+  #automated h3{
+    font-size: 24px;
+    /* line-height: 29px; */
+  }
+
+  #automated p{
+    font-size: 14px;
+    /* line-height: 20px; */
+  }
 }
