@@ -341,7 +341,6 @@ a{
   font-weight: 600;
   font-family: var(--whyte-inktrap);
   line-height: 38px;
-  color: var(--white);
 }
 
 #automated p{
@@ -349,7 +348,6 @@ a{
   font-weight: 400;
   font-family: var(--ibm-plex-serif);
   line-height: 25px;
-  color: var(--white);
 }
 
 #automated div:last-child{
@@ -362,23 +360,80 @@ a{
 @media screen and (max-width: 768px){
   #automated{
     grid-template-columns: 1fr;
+    place-self: center;
     padding: 2rem 0;
     margin-top: 25rem;
     width: 10rem;
-    margin-left: 5rem;
   }
 
   #automated div{
+    padding: 0;
     border-right: none;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 
   #automated h3{
     font-size: 24px;
-    /* line-height: 29px; */
+    margin-top: 1.5rem;
   }
 
   #automated p{
     font-size: 14px;
-    /* line-height: 20px; */
+  }
+}
+
+
+
+/* Companies code */
+
+#companies{
+  color: var(--white);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+  margin: auto;
+  background: blueviolet;
+  width: 1050px;
+  height: 130px;
+}
+
+.comp{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+}
+
+span img{
+  width: 50px;
+  height: 50px;
+}
+
+
+/* Companies@media query:768px */
+
+@media screen and (max-width: 768px){
+  #companies{
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    height: 100px;
+    gap: 10px;
+    place-self: center;
+    margin: auto;
+    width: 10rem;
+    height: 20rem;
+  }
+
+  .comp{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  span img{
+    width: 30px;
+    height: 30px;
   }
 }
