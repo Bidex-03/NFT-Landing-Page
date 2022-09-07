@@ -16,8 +16,10 @@ var sideLink = document.getElementById('sideLink');
 
 function showMenu() {
     sideLink.style.right = "0";
+    // sideLink.style.display = "flex";
 }
 
 function hideMenu() {
     sideLink.style.right = "-200px";
+    // sideLink.style.display = "none";
 }

@@ -140,7 +140,8 @@ a{
   }
 
   #sideLink{
-    position: fixed !important;
+    display: none;
+    position: fixed;
     background: var(--numbers-bg);
     height: 100vh;
     width: 200px;
