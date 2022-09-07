@@ -264,6 +264,7 @@ a{
   .lanTxt h1{
     font-size: 36px;
     line-height: 43px;
+    padding-top: 2rem;
   }
 
   .lanTxt p{
