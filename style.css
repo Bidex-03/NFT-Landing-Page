@@ -20,6 +20,7 @@ body{
   --nav-bar-bg: rgba(31, 29, 43, 0.37);
   --btn-bg: #D331BB;
   --numbers-bg: #262222;
+  --ash: #a5a5a5;
   --logo-bg: linear-gradient(0deg, rgba(91, 91, 91, 0.54), rgba(91, 91, 91, 0.54)), #000000;
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
@@ -436,5 +437,107 @@ span img{
   span img{
     width: 30px;
     height: 30px;
+  }
+}
+
+
+/* Top seller code */
+
+#seller{
+  margin: auto;
+  width: 1050px;
+  margin-top: 7rem;
+}
+
+#seller h3{
+  font-family: var(--whyte-inktrap);
+  font-weight: 900;
+  font-size: 30px;
+  color: var(--white);
+  margin-bottom: 5rem;
+}
+
+.selGrid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: .5rem 1rem;
+}
+
+.selBox{
+  background: url('./Assets/Blur-bg/blur\ background\ 1.svg');
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.selBox img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.selCap{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.selName{
+  font-family: var(--ibm-plex-sans);
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--white);
+}
+
+.selBox .eth{
+  font-family: var(--ibm-plex-sans);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--ash);
+}
+
+
+/* Top seller@media query:768px */
+
+@media screen and (max-width: 768px){
+  #seller{
+    width: 80%;
+    margin-top: 5rem;
+  }
+
+  #seller h3{
+    font-size: 24px;
+    margin-bottom: 3rem;
+  }
+
+  .selGrid{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem 1rem;
+  }
+
+  .selBox{
+    padding: 1rem 1rem;
+  }
+
+  .selBox img{
+    width: 60px;
+    height: 60px;
+  }
+
+  .selCap{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .selName{
+    font-size: 16px;
+  }
+
+  .selBox .eth{
+    font-size: 14px;
   }
 }
