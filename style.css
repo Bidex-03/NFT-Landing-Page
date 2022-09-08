@@ -323,13 +323,13 @@ a{
 
 #automated{
   color: var(--white);
+  background: rgba(38,34,34,0.25);
+  box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+  --webkit-backdrop-filter: blur(20px);
   margin-top: 15rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
-  background: #262222;
-  opacity: 0.45;
-  backdrop-filter: blur(86px);
   padding: 2rem 1rem;
 }
 
@@ -388,24 +388,32 @@ a{
 
 
 
-/* Companies code */
+/* Partners code */
 
-#companies{
+#partners{
   color: var(--white);
+  background: rgba(53,61,119,0.1);
+  box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+  --webkit-backdrop-filter: blur(20px);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   place-items: center;
   margin: auto;
-  background: blueviolet;
   width: 1050px;
   height: 130px;
 }
 
-.comp{
+.part{
   display: flex;
   align-items: center;
   gap: 5px;
+}
 
+.partName{
+  font-size: 25px;
+  font-weight: 400;
+  font-family: var(--ibm-plex-sans);
+  line-height: 20px;
 }
 
 span img{
@@ -414,10 +422,10 @@ span img{
 }
 
 
-/* Companies@media query:768px */
+/* Partners@media query:768px */
 
 @media screen and (max-width: 768px){
-  #companies{
+  #partners{
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
     height: 100px;
@@ -428,10 +436,14 @@ span img{
     height: 20rem;
   }
 
-  .comp{
+  .part{
     display: flex;
     align-items: center;
     gap: 5px;
+  }
+
+  .partName{
+    font-size: 16px;
   }
 
   span img{
