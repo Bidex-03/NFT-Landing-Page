@@ -21,6 +21,7 @@ body{
   --btn-bg: #D331BB;
   --numbers-bg: #262222;
   --ash: #a5a5a5;
+  --grey: #B9B8FF;
   --logo-bg: linear-gradient(0deg, rgba(91, 91, 91, 0.54), rgba(91, 91, 91, 0.54)), #000000;
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
@@ -456,9 +457,8 @@ span img{
 /* Top seller code */
 
 #seller{
-  margin: auto;
   width: 1050px;
-  margin-top: 7rem;
+  margin: 7rem auto;
 }
 
 #seller h3{
@@ -553,3 +553,151 @@ span img{
     font-size: 14px;
   }
 }
+
+
+
+/* Explore code */
+
+#explore{
+  width: 1050px;
+  margin: 7rem auto;
+}
+
+#exView{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#exView h3{
+  font-family: var(--whyte-inktrap);
+  font-weight: 900;
+  font-size: 30px;
+  color: var(--white);
+}
+
+#exGrid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem 1rem;
+  margin-top: 5rem;
+}
+
+#exGrid .exBox{
+  background: url('./Images/monster.jpg') center center/cover;
+  display: grid;
+  align-content: end;
+  width: 340px;
+  height: 496px;
+}
+
+#exGrid .exEnd{
+  background: url('./Assets/Blur-bg/Rectangle.svg') center center/cover;
+  background: red;
+  height: 186px;
+  background: rgba(193,184,184,0.75);
+  box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+  --webkit-backdrop-filter: blur(20px);
+  padding: 2rem;
+}
+
+#exGrid .div1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--ibm-plex-sans);
+  line-height: 2rem;
+}
+
+#exGrid .div1 .city{
+  font-weight: 700;
+  color: var(--black);
+  font-size: 20px;
+  font-family: var(--ibm-plex-serif);
+}
+
+#exGrid .div1 .name{
+  text-decoration-line: underline;
+}
+
+.div1 .endEth{
+  font-size: 20px;
+  font-weight: 900;
+  font-family: var(--whyte-inktrap);
+  line-height: 2rem;
+  color: var(--grey);
+}
+
+#exGrid .endBtn{
+  background: var(--black);
+  margin-top: 1rem;
+  border: none;
+  padding: 1rem 2rem;
+  font-family: var(--ibm-plex-sans);
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: var(--ash);
+  cursor: pointer;
+}
+
+
+/* Explore@media query:768px */
+
+@media screen and (max-width: 768px){
+  #explore{
+    width: 80%;
+    margin-top: 5rem;
+  }
+
+  #exView{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #exView h3{
+    font-size: 24px;
+  }
+
+  #exGrid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem 1rem;
+    margin-top: 3rem;
+  }
+
+  #exGrid .exBox{
+    width: 100%;
+    height: 496px;
+  }
+
+  #exGrid .exEnd{
+    height: 165px;
+    padding: 1rem;
+  }
+
+  #exGrid .div1{
+    font-size: 14px;
+  }
+
+  #exGrid .div1 .city{
+    font-size: 16px;
+  }
+
+  #exGrid .div1 .name{
+    font-size: 14px;
+  }
+
+  .div1 .endEth{
+    font-size: 16px;
+  }
+
+  #exGrid .endBtn{
+    padding: 1rem 1rem;
+    font-size: 14px;
+  }
+}
+
