@@ -612,8 +612,6 @@ span img{
 }
 
 #exGrid .exEnd{
-  background: url('./Assets/Blur-bg/Rectangle.svg') center center/cover;
-  background: red;
   height: 186px;
   background: rgba(193,184,184,0.75);
   box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
@@ -721,3 +719,94 @@ span img{
   }
 }
 
+
+/* Collections code */
+
+#collection{
+  width: 1050px;
+  margin: 7rem auto;
+}
+
+#collection h3{
+  font-family: var(--whyte-inktrap);
+  font-weight: 900;
+  font-size: 30px;
+  color: var(--white);
+}
+
+#colGrid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem 1rem;
+  margin-top: 5rem;
+}
+
+#colGrid .colBox{
+  width: 340px;
+  height: 496px;
+}
+
+#colGrid .cartEl-1{
+  display: flex;
+  gap: .5rem;
+}
+
+#colGrid .cartEl-1 .cart1{
+  width: 200px;
+  height: 198px;
+}
+
+.cartFlex{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.cartFlex img{
+  width: 117px;
+  height: 95px;
+  object-fit: cover;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.cartEl-2{
+  display: grid;
+  align-content: end;
+}
+
+.cartEl-2 {
+  width: 325px;
+  height: 170px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  background: url('./Images/cartoon-4.png')center center/cover;
+}
+
+.cart4-end{
+  height: 82px;
+  background: rgba(102,89,89,0.7);
+  box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+  backdrop-filter: blur(6.4px);
+  -webkit-backdrop-filter: blur(6.4px);
+  padding: 2rem;
+  transform: matrix(-1, 0, 0, 1, 0, 0)
+}
+
+.cart4-end span{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart4-end span p:nth-child(1){
+  font-family: var(--whyte-inktrap);
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--white);
+}
+
+.cart4-end span p:nth-child(2){
+  font-family: var(--ibm-plex-sans);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--white);
+}
