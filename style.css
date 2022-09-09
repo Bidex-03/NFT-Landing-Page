@@ -766,7 +766,7 @@ span img{
   width: 117px;
   height: 95px;
   object-fit: cover;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
+  /* transform: matrix(-1, 0, 0, 1, 0, 0); */
 }
 
 .cartEl-2{
@@ -777,7 +777,7 @@ span img{
 .cartEl-2 {
   width: 325px;
   height: 170px;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
+  /* transform: matrix(-1, 0, 0, 1, 0, 0); */
   background: url('./Images/cartoon-4.png')center center/cover;
 }
 
@@ -785,10 +785,9 @@ span img{
   height: 82px;
   background: rgba(102,89,89,0.7);
   box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-  backdrop-filter: blur(6.4px);
   -webkit-backdrop-filter: blur(6.4px);
   padding: 2rem;
-  transform: matrix(-1, 0, 0, 1, 0, 0)
+  /* transform: matrix(-1, 0, 0, 1, 0, 0); */
 }
 
 .cart4-end span{
@@ -809,4 +808,21 @@ span img{
   font-weight: 400;
   font-size: 18px;
   color: var(--white);
+}
+
+
+/* Collections@media query:768px */
+
+@media screen and (max-width:768px) {
+  #collection{
+    width: 80%;
+    margin-top: 5rem;
+  }
+  
+  #colGrid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem 1rem;
+    margin-top: 5rem;
+  }
 }
