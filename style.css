@@ -119,10 +119,20 @@ a{
   display: none;
 }
 
+/* navbar@media query:1024px */
+
+@media screen and (max-width:1024px) {
+  #navbar{
+    padding: 25px 80px;
+    position: fixed;
+    width: 100%;
+  }
+}
+
 
 /* Navbar@media query:768px */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px){
   #navbar{
     padding: 18px 30px;
     position: fixed;
@@ -248,6 +258,43 @@ a{
   top: 40px;
   left: 2px;
   object-fit: cover;
+}
+
+/* lanPage@media query:1024px */
+
+@media screen and (max-width: 1024px){
+  #lanPage{
+    padding: 120px 80px;
+    margin: auto;
+    grid-column-gap: 3rem;
+  }
+
+  .lanImg .img1{
+    z-index: 3;
+    width: 320px;
+    height: 510px;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+  }
+  
+  .lanImg .img2{
+    z-index: 2;
+    width: 320px;
+    height: 480px;
+    top: 20px;
+    left: 5px;
+    object-fit: cover;
+  }
+  
+  .lanImg .img3{
+    z-index: 1;
+    width: 340px;
+    height: 450px;
+    top: 40px;
+    left: 2px;
+    object-fit: cover;
+  }
 }
 
 /* lanPage@media query:768px */
@@ -423,6 +470,16 @@ span img{
 }
 
 
+/* Partners@media query:1024px */
+
+@media screen and (max-width: 1024px){
+  #partners{
+    grid-template-columns: repeat(5, 1fr);
+    width: 850px;
+  }
+}
+
+
 /* Partners@media query:768px */
 
 @media screen and (max-width: 768px){
@@ -508,6 +565,48 @@ span img{
   font-weight: 500;
   font-size: 16px;
   color: var(--ash);
+}
+
+/* top seller@media query:1024px */
+
+@media screen and (max-width: 1024px){
+  #seller{
+    width: 800px;
+    margin: auto;
+    margin-top: 3rem;
+  }
+
+  #seller h3{
+    font-size: 24px;
+  }
+
+  .selGrid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .selBox{
+    padding: 1rem 1rem;
+  }
+
+  .selBox img{
+    width: 60px;
+    height: 60px;
+  }
+
+  .selCap{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .selName{
+    font-size: 16px;
+  }
+
+  .selBox .eth{
+    font-size: 14px;
+  }
 }
 
 
@@ -668,6 +767,7 @@ span img{
   #explore{
     width: 85%;
     margin-top: 5rem;
+    margin: auto;
   }
 
   #exView{
