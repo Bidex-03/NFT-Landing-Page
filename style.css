@@ -765,12 +765,9 @@ span img{
   /* transform: matrix(-1, 0, 0, 1, 0, 0); */
 }
 
-.cartEl-2{
+.cartEl-2 {
   display: grid;
   align-content: end;
-}
-
-.cartEl-2 {
   width: 340px;
   height: 170px;
   /* transform: matrix(-1, 0, 0, 1, 0, 0); */
@@ -780,9 +777,6 @@ span img{
 .cartEl-3{
   display: grid;
   align-content: end;
-}
-
-.cartEl-3{
   width: 340px;
   height: 170px;
   /* transform: matrix(-1, 0, 0, 1, 0, 0); */
@@ -845,7 +839,7 @@ span img{
     height: 198px;
   }
 
-  .cartEl-2 {
+  .cartEl-2, .cartEl-3 {
     width: 320px;
     height: 170px;
   }
@@ -853,5 +847,228 @@ span img{
   .cart4-end {
     height: 60px;
     padding: 1.2rem;
+  }
+}
+
+
+/* Drop code */
+
+#drop{
+  width: 1050px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#drop .dropCont{
+  width: 579px;
+  margin-top: 5rem;
+}
+
+.dropCont h3{
+  font-family: var(--whyte-inktrap);
+  font-weight: 900;
+  font-size: 30px;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+}
+
+.dropCont p{
+  font-family: var(--ibm-plex-sans);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.dropInp{
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropInp input{
+  width: 352px;
+  height: 58px;
+  background: rgba(255,255,255,0.1);
+  border: none;
+  padding: 1rem;
+  outline: none;
+  font-family: var(--ibm-plex-sans);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.dropInp input::placeholder{
+  font-family: var(--ibm-plex-serif);
+  font-weight: 500;
+  font-size: 18px;
+  color: #b8b8b8;
+}
+
+.dropInp button{
+  width: 231px;
+  height: 58px;
+  background: var(--btn-bg);
+  border: none;
+  outline: none;
+  font-family: var(--ibm-plex-serif);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* Drop@media query:768px */
+
+@media screen and (max-width:768px) {
+  #drop{
+    width: 85%;
+    padding: 5rem auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  #drop .dropImg{
+    padding-top: 5rem;
+  }
+
+  #drop .dropImg img{
+    width: 320px;
+    height: 261px;
+  }
+
+  #drop .dropCont{
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .dropCont h3{
+    font-size: 38px;
+  }
+
+  .dropCont p{
+    font-size: 14px;
+  }
+
+  .dropInp{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropInp input{
+    width: 100%;
+  }
+
+  .dropInp button{
+    width: 100%;
+    height: 50px;
+  }
+}
+
+
+/* Footer code */
+
+#footer{
+  width: 1050px;
+  margin: auto;
+  margin-top: 7rem;
+}
+
+#footer .footCont{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1.5rem;
+}
+
+#footer .useful{
+  width: 117px;
+}
+
+#footer .stats{
+  width: 70px;
+}
+
+#footer .follow{
+  width: 121px;
+}
+
+#footer .resources{
+  width: 200px;
+}
+
+#footer .footEl ul{
+  list-style: none;
+}
+
+#footer .footEl ul li{
+  font-family: var(--ibm-plex-sans);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--white);
+  margin-bottom: .5rem;
+}
+
+#footer .footEl p{
+  width: 289px;
+  font-family: var(--ibm-plex-sans);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--white);
+  margin-top: 1.5rem;
+}
+
+#footer .heading{
+  font-family: var(--whyte-inktrap);
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+}
+
+.footEl .brands{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer .footEnd{
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--white);
+  
+}
+
+#footer .footEnd p{
+  font-family: var(--whyte-inktrap);
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footEnd span a{
+  font-family: var(--whyte-inktrap);
+  font-weight: 900;
+  font-size: 16px;
+  color: var(--btn-bg);
+}
+
+
+/* Footer@media query:768px */
+
+@media screen and (max-width:768px) {
+  #footer{
+    width: 85%;
+    margin: auto;
+    margin-top: 5rem;
+  }
+
+  #footer .footCont{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1.5rem;
   }
 }
