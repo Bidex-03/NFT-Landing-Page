@@ -19,6 +19,7 @@ body{
   --whyte-inktrap: 'Whyte Inktrap';
   --nav-bar-bg: rgba(31, 29, 43, 0.37);
   --btn-bg: #D331BB;
+  --btn-bgHover: #960779;
   --numbers-bg: #262222;
   --ash: #a5a5a5;
   --grey: #B9B8FF;
@@ -33,24 +34,32 @@ a{
 }
 
 .btn a{
-  background: var(--btn-bg);
+  width: 231px;
+  height: 58px;
   padding: 15px 25px;
   border-radius: 2px;
-  color: var(--white);
-  font-weight: 600;
+  background: var(--btn-bg);
+  border: none;
+  outline: none;
   font-family: var(--ibm-plex-serif);
-  letter-spacing: .5px;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--white);
   cursor: pointer;
-  /* display: grid;
+  display: grid;
   place-items: center;
-  width: 12rem; */
+  width: 12rem;
 }
 
-/* @media screen and (max-width: 768px){
+.btn a:hover{
+  background: var(--btn-bgHover);
+}
+
+@media screen and (max-width: 768px){
   .btn a{
     width: 100%;
   }
-} */
+}
 
 
 /* Main components code */
@@ -76,12 +85,9 @@ a{
   font-weight: 600;
 }
 
-.navBtn{
-  margin-top: 12px;
-}
-
 #sideLink{
   display: flex;
+  align-items: center;
   position: relative;
 }
 
@@ -1020,6 +1026,10 @@ span img{
   cursor: pointer;
 }
 
+.dropInp button:hover{
+  background: var(--btn-bgHover);
+}
+
 /* Drop@media query:768px */
 
 @media screen and (max-width:768px) {
@@ -1159,7 +1169,7 @@ span img{
 
 /* Footer@media query:768px */
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   #footer{
     width: 85%;
     margin: auto;
