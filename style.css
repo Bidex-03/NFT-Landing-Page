@@ -935,18 +935,13 @@ span img{
     margin-top: 5rem;
   }
 
-  #colGrid .colBox {
-    width: 310px;
-    height: 380px;
-}
-
   #colGrid .cartEl-1 .cart1{
-    width: 195px;
+    width: 190px;
     height: 198px;
   }
 
   .cartEl-2, .cartEl-3 {
-    width: 320px;
+    width: 315px;
     height: 170px;
   }
 
