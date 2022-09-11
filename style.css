@@ -925,7 +925,7 @@ span img{
   #collection{
     width: 85%;
     margin-top: 5rem;
-    margin: auto;
+    /* margin: auto; */
   }
   
   #colGrid{
@@ -936,7 +936,7 @@ span img{
   }
 
   #colGrid .colBox {
-    width: 330px;
+    width: 310px;
     height: 380px;
 }
 
