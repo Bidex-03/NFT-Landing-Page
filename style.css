@@ -767,7 +767,7 @@ span img{
   #explore{
     width: 85%;
     margin-top: 5rem;
-    margin: auto;
+    /* margin: auto; */
   }
 
   #exView{
